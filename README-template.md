@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Rgulati4657/Order_Summary_Prac)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [(https://github.com/Rgulati4657/Order_Summary_Prac)]
+- Live Site URL: [(https://rgulati4657.github.io/Order_Summary_Prac/)]
 
 ## My process
 
