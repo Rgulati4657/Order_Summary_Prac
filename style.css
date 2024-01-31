@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --whitee :#fff;
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    }
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-color: var(--Pale-blue);
+    position: relative;
+}
+.container{
+position: absolute;
+top:50% ;
+left:50%;
+transform: translate(-50%,-50%);
+max-width: 450px;
+height: auto;
+background-color: var(--whitee);
+border-radius: 20px;
+overflow: hidden;
+}
+
+.text-content{
+    padding: 7%;
+    text-align: center;
+}
+.title{ 
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 1.8rem;
+    margin-bottom: 1.1rem;
+    
+}
+.subtitle{
+    color: var(--Desaturated-blue);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+
+}
+.plan-box,.plan-box > a{
+    background-color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+}
+.plan-box-left{
+        display: flex;
+        align-items: center;
+}
+.plan-box-left div{
+    margin-left: 1.3rem;
+}
+.plan-box-left div h5{
+font-weight: 900;
+color: var(--Dark-blue);
+}
+.plan-box-left div p{
+    color: var(--Desaturated-blue);
+
+}
+.plan-box a{
+    font-weight: 700;
+    color: var(--Bright-blue);
+}
+.proceed-btn{
+    display: block;
+    text-decoration: none;
+    border: 1px solid var(--Bright-blue);
+    border-radius: 0.8rem;
+    background-color: var(--Bright-blue);
+    padding: 1.2rem 0;
+    color: var(--whitee);
+    margin: 1rem 0;
+}
+.plan-box a:hover{
+    text-decoration: none;
+    color: var(--Bright-blue);
+}
+.cancel-btn{
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+
+}
+a.proceed-btn:hover{
+background-color:var(--Desaturated-blue);
+}
+a.cancel-btn:hover{
+   
+   color:var(--Dark-blue);
+}
+
+@media screen and (max-width:500px){
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        font-size: 14px;
+    }
+    .container{
+        max-width: 350px;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .subtitle{
+        font-size: 1rem;
+    }
+    .plan-box-left{
+        font-size: 1rem;
+    }
+    
+}
